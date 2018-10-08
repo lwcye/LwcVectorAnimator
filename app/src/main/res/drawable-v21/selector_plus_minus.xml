@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/minus"
+        android:drawable="@drawable/vector_pathmorph_plusminus_minus"
+        android:state_checked="true"/>
+
+    <item
+        android:id="@+id/plus"
+        android:drawable="@drawable/vector_pathmorph_plusminus_plus"
+        android:state_checked="false"/>
+
+    <transition
+        android:drawable="@drawable/animated_vector_pathmorph_plusminus_plus_to_minus"
+        android:fromId="@id/plus"
+        android:toId="@id/minus"/>
+
+    <transition
+        android:drawable="@drawable/animated_vector_pathmorph_plusminus_minus_to_plus"
+        android:fromId="@id/minus"
+        android:toId="@id/plus"/>
+
+
+</animated-selector>
